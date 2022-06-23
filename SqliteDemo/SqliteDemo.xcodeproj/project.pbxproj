@@ -16,6 +16,11 @@
 		20C688F6286416A100B57794 /* SqliteDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C688F5286416A100B57794 /* SqliteDemoTests.swift */; };
 		20C68900286416A100B57794 /* SqliteDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C688FF286416A100B57794 /* SqliteDemoUITests.swift */; };
 		20C68902286416A100B57794 /* SqliteDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C68901286416A100B57794 /* SqliteDemoUITestsLaunchTests.swift */; };
+		20C6891128641C4D00B57794 /* SqliteDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6891028641C4D00B57794 /* SqliteDatabaseManager.swift */; };
+		20C6891328641C6600B57794 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6891228641C6600B57794 /* TodoModel.swift */; };
+		20C6891528641CAD00B57794 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6891428641CAD00B57794 /* TodoViewModel.swift */; };
+		20C6891728641CC400B57794 /* TodoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6891628641CC400B57794 /* TodoRepo.swift */; };
+		20C6891928641E2200B57794 /* TodoRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6891828641E2200B57794 /* TodoRepoImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		20C688FB286416A100B57794 /* SqliteDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C688FF286416A100B57794 /* SqliteDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDemoUITests.swift; sourceTree = "<group>"; };
 		20C68901286416A100B57794 /* SqliteDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20C6891028641C4D00B57794 /* SqliteDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDatabaseManager.swift; sourceTree = "<group>"; };
+		20C6891228641C6600B57794 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		20C6891428641CAD00B57794 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		20C6891628641CC400B57794 /* TodoRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepo.swift; sourceTree = "<group>"; };
+		20C6891828641E2200B57794 /* TodoRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepoImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		20C688DD286416A000B57794 /* SqliteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20C6890E28641C0700B57794 /* SqliteDB */,
 				20C688DE286416A000B57794 /* AppDelegate.swift */,
 				20C688E0286416A000B57794 /* SceneDelegate.swift */,
 				20C688E2286416A000B57794 /* ViewController.swift */,
@@ -125,6 +136,18 @@
 				20C68901286416A100B57794 /* SqliteDemoUITestsLaunchTests.swift */,
 			);
 			path = SqliteDemoUITests;
+			sourceTree = "<group>";
+		};
+		20C6890E28641C0700B57794 /* SqliteDB */ = {
+			isa = PBXGroup;
+			children = (
+				20C6891028641C4D00B57794 /* SqliteDatabaseManager.swift */,
+				20C6891228641C6600B57794 /* TodoModel.swift */,
+				20C6891428641CAD00B57794 /* TodoViewModel.swift */,
+				20C6891628641CC400B57794 /* TodoRepo.swift */,
+				20C6891828641E2200B57794 /* TodoRepoImp.swift */,
+			);
+			path = SqliteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C6891728641CC400B57794 /* TodoRepo.swift in Sources */,
+				20C6891528641CAD00B57794 /* TodoViewModel.swift in Sources */,
+				20C6891128641C4D00B57794 /* SqliteDatabaseManager.swift in Sources */,
 				20C688E3286416A000B57794 /* ViewController.swift in Sources */,
 				20C688DF286416A000B57794 /* AppDelegate.swift in Sources */,
+				20C6891328641C6600B57794 /* TodoModel.swift in Sources */,
+				20C6891928641E2200B57794 /* TodoRepoImp.swift in Sources */,
 				20C688E1286416A000B57794 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
