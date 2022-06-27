@@ -8,4 +8,5 @@ protocol TodoRepo {
     func updateTodo(todo:TodoModel)->TodoModel
     func deleteAllTodo()->Bool
     func getAllTodos()->[TodoModel]
+    
 }
