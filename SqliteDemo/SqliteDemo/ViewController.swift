@@ -29,8 +29,6 @@ class ViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear Todos", style: .done, target: self, action: #selector(onTouchClearAllTodos))
     }
     @objc func onTouchClearAllTodos()  {
-        
-        print("onTouchClearAllTodos")
     }
     @objc func onAddBtnTouched(){
         
